@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо Ярослава</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="portfolio">Моє портфоліо</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>На головну</b></a></li>
+                <li><a href="page2.html"><b>Сім’я</b></a></li>
+                <li><a href="page3.html"><b>Дитинство і Шкільні роки</b></a></li>
+                <li><a href="page5.html"><b>Плавання і Захоплення</b></a></li>
+                <li><a href="page6.html"><b>Друзі</b></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Вітаю на сайті Романчука Ярослава!</h1>
+        <div class="content">
+            <div class="text">
+                <h2>Про мене:</h2>
+                <p>Всім привіт, мене звати Ярослав, мені 17 років. Я навчаюся на першому курсі Навчально-наукового інституту інформаційних технологій та бізнесу 
+                   на спеціальності "Економічна кібернетика" в Острозькій академії. Моя спеціальність 
+                   включає економіку, IT та аналітику. Бажаю приємного проведення часу!</p>
+                <p><strong>Особиста адреса:</strong> yarikromanchuk10@gmail.com</p>
+                <p><strong>Академічна адреса:</strong> yaroslav.romanchuk@oa.edu.ua</p>
+                <p><strong>Контактний телефон:</strong> +380977768838</p>
+            </div>
+            <div class="image">
+                <img src="фото/photo.jpg" alt="Фото Ярослава">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої друзі</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e8d0;
+            margin: 0;
+            padding: 0;
+        }
+        header.scrolled {
+            background-color: black;
+        }       
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #c49a6c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            transition: background 0.3s ease-in-out;
+            z-index: 1000;
+        }
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #b27f40;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            transform: translateX(215%);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: #d4a374;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 0;
+        }
+        .friend {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #000;
+        }
+        .friend:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .friend img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .friend-info {
+            text-align: left;
+            margin: 0 20px;
+            flex: 1;
+        }
+        .friend-info h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .friend-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="index.html">На головну</a></li>
+            <li><a href="page3.html">Дитинство і Шкільні роки</a></li>
+            <li><a href="page5.html">Плавання і Захоплення</a></li>
+            <li><a href="page6.html">Друзі</a></li>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Моя сім’я</h1>
+
+        <div class="friend">
+            <div class="friend-info">
+                <h3>Моя Мама</h3>
+                <p>Мою маму звати Тетяна. Вона народилася в 1973 році в місті Житомир. Мама навчалася в коледжі бізнесу і права за спеціальністю "Бухгалтерський облік". Моя мама — дуже гарна, сильна і трудяща людина, яка ніколи не здається, незважаючи на випробування, які їй дає життя. Моя мама працює приватним підприємцем у закладі "Кочерга". Мама знає трохи турецьку мову, бо була кілька разів у Туреччині, де трохи її і вивчила. Моя мама любить готувати смачні страви, особливо запечену картоплю. Також вона трохи захоплюється історією, дивиться різноманітні історичні фільми та серіали.</p>
+            </div>
+            <img src="фото/friend8.jpg" alt="Мама">
+        </div>
+
+        <div class="friend">
+            <div class="friend-info">
+                <h3>Мій тато</h3>
+                <p>На жаль, про мого тата Сашка я не можу розповісти так само, як про маму. Тато працював на будівництві за кордоном, де через випадкові обставини загинув у 2015 році. Він загинув, коли у мене були одні з перших змагань з плавання, де я отримав свою золоту медаль. Незважаючи на це, я пам’ятаю свого батька: пам’ятаю, як ми разом сиділи і рибачили на дачі, пам’ятаю, як ми разом будували, пам’ятаю, як разом щось готували. Тато здобув освіту в Державному університеті «Житомирська політехніка».</p>
+            </div>
+            <img src="фото/friend9.jpg" alt="Папа">
+        </div>
+
+        <div class="friend">
+            <div class="friend-info">
+                <h3>Мій брат</h3>
+                <p>Мій брат Денис — справжній чемпіон, який пройшов через тяжкі випробування. Денис — майстер спорту України з плавання, який посідав призові місця на чемпіонаті Європи (він зайняв 2 місце, програвши італійцю лише на 0,02 секунди на дистанції 100 метрів брасом) та поставив багато рекордів, які ще досі не всі побили. Денис побував у всіх куточках України, виступаючи в різних містах нашої країни. Після завершення своєї кар’єри він пішов працювати тренером у один із найкращих басейнів України — у Києві, я зараз говорю про Tsarsky City Resort. У наш час мій брат є героєм не тільки для мене. Він став людиною, яка боронить нашу країну від агресії ворога. Він — мій щит, особа, на яку я рівняюся, особа з важким, але гідним життям.</p>
+            </div>
+            <img src="фото/friend10.jpg" alt="Брат">
+        </div>
+    </div>
+</body>
+</html>
